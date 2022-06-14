@@ -10,6 +10,9 @@
       "require": "./lib/dist/my-cool-library.umd.js"
     }
   },
+  "imports": {
+    "#lib": "./lib/index.js"
+  },
   "scripts": {
     "build:lib": "rollup --config lib/rollup.config.js",
     "build:web": "webpack --mode=production --config web/webpack.config.js",
